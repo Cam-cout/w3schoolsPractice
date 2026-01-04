@@ -10,6 +10,9 @@ int main()
     cout << "Enter your birth month(1-12):";
     cin >> month;
 
+
+    //Put this in a do-while loop
+
     //Create a swtich statment to select to corrosponding birth month
     switch(month){
         case 1:
