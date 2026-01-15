@@ -6,15 +6,18 @@ int main()
     //Create a variable for the months in a year
     int month;
     
-    //Prompt user to input their birth month
-    cout << "Enter your birth month(1-12):";
-    cin >> month;
-
 
     //Put this in a do-while loop
 
     //Create a swtich statment to select to corrosponding birth month
-    switch(month){
+    
+    do{
+
+        //Prompt user to input their birth month
+    cout << "Enter your birth month(1-12):";
+    cin >> month;
+
+        switch(month){
         case 1:
             cout << "Your birth month is January.";
             break;
@@ -52,22 +55,14 @@ int main()
             cout << "Your birth month is December.";
             break;
         default:
-        if(month < 1){
-            cout << "How tf is there a negative month??? Input a valid\n"
-                 << "month ya FAWKING DUMBASS.";
-                 //return;
-        }else if(month > 12){
-            cout << "Apparently there's more than 12 months\n"
-                 << "in a year got it:) ya fawking idiot... Input a\n"
-                 << "valid month please.";
-                 //return;
+            cout << "Invalid month bro. Try again lol.\n";
+                 
         }
-        
-
-    }
+    } while (month < 1 || month > 12);
 
     
-
+        
 
     return 0;
+
 }
